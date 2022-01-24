@@ -1,7 +1,6 @@
 from .base import *
 import os
 import django_heroku
-import django
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -37,7 +36,7 @@ DATABASES = {
 STATIC_ROOT = os.path.joing(BASE_DIR, 'staticfiles/')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR.child('static')]
-django.heroku.settings(locals())
+django_heroku.settings(locals())
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR.child('media')
