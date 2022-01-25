@@ -36,6 +36,7 @@ DJANGO_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
+    'django.contrib.sites',
 )
 
 LOCAL_APPS = (
@@ -62,6 +63,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+SITE_ID = 2
 ROOT_URLCONF = 'blog.urls'
 
 TEMPLATES = [

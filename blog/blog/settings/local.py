@@ -26,7 +26,7 @@ DATABASES = {
         'NAME': 'dbm1auhevc7ocm',
         'USER': 'uevuzpwpnrcrfu',
         'PASSWORD': '2f04efabcfcd98635fa720aa70875dc55e335103204e96503ebe2474db810928',
-        'HOST': 'ec2-54-208-139-247.compute-1.amazonaws.com ',
+        'HOST': 'ec2-54-208-139-247.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
