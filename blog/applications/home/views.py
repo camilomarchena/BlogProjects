@@ -24,7 +24,7 @@ class HomePageView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(HomePageView, self).get_context_data(**kwargs)
         # cargamos el home
-        context["home"] = Home.objects.latest('created')
+        context["home"] = Home.order_by('-created_at').last()
         # contexto de portada
         context["portada"] = Entry.objects.entrada_en_portada()
         # contexto para los articulo en home
